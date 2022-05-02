@@ -31,6 +31,7 @@ prev.addEventListener('click', () => {
 
 function update(){
     circles.forEach((circle,idx) => {
+        console.log(idx,currentActive)
         if(idx < currentActive){
             circle.classList.add('active')
         }else{
@@ -53,5 +54,6 @@ function update(){
     }else{
         prev.disabled = false;
         next.disabled = false;
+
     }
 }
