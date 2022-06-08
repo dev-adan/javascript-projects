@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='./style.css' />
+    <title>Budget App</title>
+</head>
+<body>
+    <h1 class='main-heading'>My Weekly Budget App</h1>
+    <div id="box">
+        <div class="box__left">
+            <h3>Add Your Expenses Here...</h3>
+
+            <div id='message'>Your budget is not sufficient...</div>
+
+            <div class="form">
+                <form>
+                    <h5>Name:</h5>
+                    <input  type='text' placeholder="Eg. Transportation" id='name' >
+
+                    <h5>Amount:</h5>
+                    <input type='number' placeholder="Eg. 20" id='amount' > 
+                   
+                </form>
+                <button id='submit' class='submit'>Add</button>
+            </div>
+        </div>
+
+
+        <div class="box__right">
+            <h3>List</h3>
+            <div class="box-budget">
+                <ul class='list' id='list'>
+            
+                </ul>
+            </div>
+
+            <h2 id='budget' class='budget'>Budget: $</h2>
+            <input id='budgetinput'  ><button id='increase'>Increase</button>
+            <h2 id ='left' class='left'>Left: $</h2>
+            
+        </div>
+    </div>
+
+    <script src='./app.js'></script>
+</body>
+</html>
